@@ -17,7 +17,7 @@ Open a terminal (VS Code or any terminal) and run:
 ```bash
 python -m venv venv
 .\venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r .\requirements.txt
 ```
 
 To upgrade pip (optional):
@@ -30,14 +30,14 @@ python -m pip install --upgrade pip
 Run the following command to generate embeddings from restaurant data and store them in the vector database:
 
 ```bash
-python vector.py
+python .\vector.py 
 ```
 
 ### 4. Run the RAG System
 Run the following command:
 
 ```bash
-python main.py
+streamlit run .\app.py
 ```
 
 ### 5. Output
